@@ -18,6 +18,6 @@ process rScript {
     ASSETS = ${ASSETS}
 
     # Runs a script from the ./assets directory
-    source( r"(${ASSETS}/r-project-1/r-script-1.R)") )
+    source( file.path(ASSETS, r"(/r-project-1/r-script-1.R)") )
     """
 }
